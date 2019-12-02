@@ -6,7 +6,7 @@ int main ()
 
     printf("aplikasi perhitungan\n");
     printf("aplikasi pilihan anda\n");
-    printf("1.kubus\n2.balok");
+    printf("1.kubus\n2.balok\n3.limas segi empat");
 
     printf("masukan pilihan anda : ");
     scanf("%d", &pilihan);
@@ -34,6 +34,10 @@ int main ()
         scanf("%d", &a);
         printf("silahkan masukan t : ");
         scanf("%d", &t);
+        printf("silahkan masukan p : ");
+        scanf("%d", &p);
+        printf("silahkan masukan l : ");
+        scanf("%d", &l);
         int luas = a * t;
         int volume = (2 * p * l) + (2 * p * l) + (2 * p * l);
         printf("hasil luas adalah, %d\n", luas);
