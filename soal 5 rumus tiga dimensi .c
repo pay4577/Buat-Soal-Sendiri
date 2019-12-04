@@ -143,11 +143,11 @@ int main ()
         int v;
         int r;
         printf("anda memilih bola\n");
-        printf("silahkan masukan v  : ");
-        scanf("%d", &v);
         printf("silahkan masukan r  : ");
         scanf("%d", &r);
-        int luas = v * r * r * r ;
+        printf("silahkan masukan v  : ");
+        scanf("%d", &v);
+        int luas = (v * r * r * r) ;
         int keliling = 4 * v * r * r;
         printf("hasil luas adalah, %d\n", luas);
         printf("hasil keliling adalah, %d\n", keliling);
