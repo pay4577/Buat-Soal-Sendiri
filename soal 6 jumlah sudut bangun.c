@@ -2,6 +2,8 @@
 
 int main()
 {
+
+}
     int pilihan;
     int p1;
     int p2;
@@ -38,24 +40,23 @@ int main()
             scanf("%d", &s3);
             int luas = a * t;
             int keliling = s1 + s2 + s3;
-            printf("hasil luas adalah %d\n", luas);
-            printf("hasil keliling adalah %d\n", keliling);
-        }
-         else
-         {
-             printf("pilihan tidak tersedia");
+            printf("hasil luas adalah, %d\n", luas);
+            printf("hasil keliling adalah, %d", keliling);
          }
-    }
+        else
+        {
+            printf("pilihan tidak tersedia");
+        }
 
-         else if (pilihan == 2)
-         {
+        if (pilihan == 2)
+        {
             printf("anda memilih 4S\n");
-            printf("1.kubus\n2.balok\n3.jajar genjang\n4.belah ketupat\n5.trapesium\n6.layang-layang\n7.persegi panjang\n8.persegi\n");
+            printf("1.kubus\n2.balok\n3.jajar genjang\n4. belah ketupat\n5.trapesium\n6. layang-layang\n7.persegi panjang\n8.persegi\n");
             printf("masukan pilihan anda : ");
             scanf("%d", &p2);
 
-         if (pilihan == 1)
-         {
+        if (pilihan == 1)
+        {
             int r;
             printf("anda memilih kubus\n");
             printf("silahkan masukan r : ");
@@ -63,32 +64,34 @@ int main()
             int luasPermukaan = 6 * r * r;
             int volume = r * r * r;
             int keliling = 12 * r;
-            printf("hasil luasPermukaan adalah %d\n", luasPermukaan);
-            printf("hasil volume adalah %d\n", volume);
-            printf("hasil keliling adalah %d\n", keliling);
-         }
-            if (pilihan == 2)
-            {
-                 int t;
-                int p;
-                int l;
-                printf("anda memilih balok\n");
-                printf("silahkan masukan t : " );
-                scanf("%d", &t);
-                printf("silahkan masukan p : ");
-                scanf("%d", &p);
-                printf("silahkan masukan l : ");
-                scanf("%d", &l);
-                int luasPermukaan = 2 * (p * l) + 2 * (p * t) + 2 * (p * l) ;
-                int keliling = (4 * t) + ( 4 * l) + (4 * l);
-                int volume = p * l * t;
-                printf("hasil luasPermukaan adalah %d\n",luasPermukaan );
-                printf("hasil keliling adalah %d\n", keliling);
-                printf("hasil volume adalah %d\n", volume);
-            }
-         if (pilihan == 3)
-         {
-             int a;
+            printf("hasil luasPermukaan adalah, %d\n", luasPermukaan);
+            printf("hasil volume adalah, %d\n", volume);
+            printf("hasil keliling adalah, %d\n", keliling);
+        }
+
+        if (pilihan == 2)
+        {
+            int t;
+            int p;
+            int l;
+            printf("anda memilih balok\n");
+            printf("silahkan masukan t : " );
+            scanf("%d", &t);
+            printf("silahkan masukan p : ");
+            scanf("%d", &p);
+            printf("silahkan masukan l : ");
+            scanf("%d", &l);
+            int luasPermukaan = 2 * (p * l) + 2 * (p * t) + 2 * (p * l) ;
+            int keliling = (4 * t) + ( 4 * l) + (4 * l);
+            int volume = p * l * t;
+            printf("hasil luasPermukaan adalah, %d\n",luasPermukaan );
+            printf("hasil keliling adalah, %d\n", keliling);
+            printf("hasil volume adalah, %d\n", volume);
+        }
+
+        if (pilihan == 3)
+        {
+            int a;
             int t;
             int p;
             int l;
@@ -101,9 +104,10 @@ int main()
             int keliling = (2 * p) + (2 * l) + (2 * (p + l));
             printf("hasil luas adalah, %d\n", luas);
             printf("hasil keliling adalah, %d\n", keliling);
-         }
-         if (pilihan == 4)
-         {
+        }
+
+        if (pilihan == 4)
+        {
             int d1;
             int d2;
             int s;
@@ -119,6 +123,7 @@ int main()
             printf("hasil luas adalah, %d\n", luas);
             printf("hasil keliling adalah, %d\n", keliling);
         }
+
         if (pilihan == 5)
         {
             int s1;
@@ -142,8 +147,9 @@ int main()
             printf("hasil luas adalah, %d\n", luas);
             printf("hasil keliling adalah, %d\n", keliling);
         }
-         if (pilihan == 6)
-         {
+
+        if (pilihan == 6)
+        {
             int d1;
             int d2;
             int p;
@@ -161,9 +167,10 @@ int main()
             int keliling = (2 * p) + (2 * l) +  (2 * ( p + l));
             printf("hasil luas adalah, %d\n", luas);
             printf("hasil keliling adalah, %d\n", keliling);
-         }
-          if (pilihan == 7)
-          {
+        }
+
+        if (pilihan == 7)
+        {
             int p;
             int l;
             printf("anda memilih persegi panjang\n");
@@ -175,9 +182,10 @@ int main()
             int keliling = 2 * (p + l);
             printf("hasil luas adalah %d\n", luas);
             printf("hasil keliling adalah %d\n", keliling);
-          }
-          if (pilihan == 8)
-          {
+        }
+
+        if (pilihan == 8)
+        {
             int s;
             printf("anda memilih persegi\n");
             printf("silahkan masukan s : ");
@@ -186,21 +194,20 @@ int main()
             int keliling = 4 * s;
             printf("hasil luas adalah %d\n", luas);
             printf("hasil keliling adalah %d\n", keliling);
-          }
-          else
-          {
-               printf("pilihan tidak tersedia");
-          }
-         }
-         else if (pilihan == 3)
-          {
+        }
+        else
+        {
+            printf("pilihan tidak tersedia");
+        }
+        if (pilihan ==3)
+        {
             printf("anda memilih 0S\n");
             printf("1.lingkaran\n");
             printf("masukan pilihan anda : ");
             scanf("%d", &p3);
-          }
-          if (p1 == 1)
-          {
+        }
+        else if (pilihan == 1)
+        {
             int r;
             int v = 3.14;
             printf("anda memilih lingkaran\n");
@@ -210,12 +217,11 @@ int main()
             int keliling = 2 * v * r;
             printf("hasil luas adalah, %d\n", luas);
             printf("hasil keliling adalah, %d\n", keliling);
-          }
-          else
-          {
-              printf("pilihan tidak tersedia");
-          }
+        }
+        else
+        {
+            printf("pilihan tidak tersedia");
+        }
+        }
+
 }
-
-
-
