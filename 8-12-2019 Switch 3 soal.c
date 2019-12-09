@@ -147,7 +147,7 @@ int main()
             break;
 
         default:
-            printf("aksi selan 1 dan 8\n");
+            printf("aksi selain 1 dan 8\n");
             break;
     }
 
